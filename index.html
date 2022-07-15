@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Inicio</title>
+    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="Estilos.css" rel="stylesheet" type="text/css"/>
+        
+    </head>
+    <body>
+        <h1>Estadistica Inferencial</h1>
+        <header>
+            <nav class="navegacion">
+                <ul class="menu">
+                   <li><a href="=index.html">Inicio</a>
+                       <ul class="subCategoria">
+                           <li><a href="#distribucion">Distribución de probabilidad</a></li>
+                            <li><a href="#mediaMuestras">Distribución de la media muestral</a></li>
+                            <li><a href="#proporcion">Proporcion Mustral</a></li>
+                            <li><a href="#diferencia">Diferencia de proporciones y cociente de varianza</a></li>
+                       </ul>
+                   </li>
+                    
+                    <li><a href="">Uso de R como software</a>
+                        <ul class="submenu">
+                            <li><a href="#UsoR">Uso del R</a></li>
+                            <li><a href="#Descarga">Link de descarga</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">  </a>
+                        <ul class="SubMensaje">
+                                
+                        </ul>
+                    </li>
+
+                </ul>
+                
+            </nav>  
+        </header>
+        
+        <nav>
+            
+        </nav>
+        <p>INFERENCIA ESTADÍSTICA.</p>
+        <p>La inferencia estadística es el conjunto de métodos y técnicas
+            que permiten inducir, a partir de la información empírica proporcionada por una muestra, 
+            cual es el comportamiento de una determinada población con un riesgo de error medible en términos de probabilidad.</p>
+        <section id="distribucion">
+                   <img src="Estadistica-inferencial-min-e1533841676384-800x400.jpg" alt=""/>
+        <h2>Distribucion de probabilidad</h2>
+            <h3>Distribucion binomial</h3>
+                <p>Es una distribución de probabilidad discreta; su función de
+    cuantí          a o de masa de probabilidad está dada por:</p>
+                <img src="formula.PNG" alt=""/>
+                <h4>Donde: </h4>
+                <p>n: número de ensayos independientes</p>
+                <p>p y q: probabilidad de exitos y fracaso, p+q=1</p>
+                <p>x: número de exitos en n esayos</p>
+            <h3>Distribucion poisson</h3>
+                <p>La función de cuantía de probabilidad es:</p>
+                <img src="formula1.PNG" alt=""/>
+                <p>X: número de éxitos por unidades de tiempo, espacio, area, etc</p>
+                <p>λ: número promedio de éxitos por unidades de tiempo,
+espacio, área, etc.</p>
+            <h3>Distribucion normal</h3>
+                <p>La función de densidad de probabilidad de la distribución Nor-
+mal es:</p>
+                <img src="formula2.PNG" alt=""/>
+                <p>μ: es la media( mediana y moda)</p>
+                <p>σ: desviación estándar σ > 0</p>
+                <p>El proceso para estandarizar la distribución Normal
+consiste en transformar la variable Normal N(μ, σ)
+N(0, 1),es decir:</p>
+                <img src="formula4.PNG" alt=""/> 
+        </section >
+        <section id="mediaMuestras">
+                <h2>Distribucion de la media muestral</h2>
+            <p>En estadística, la distribución muestral es lo que resulta de considerar todas las muestras posibles que pueden ser tomadas de una población. Su estudio permite calcular la probabilidad que se tiene, dada una sola muestra, de acercarse al parámetro de la población. Mediante la distribución muestral se puede estimar el error para un tamaño de muestra dado.</p>
+            <p>Si X1, X2, ..., Xn es unas muestra aleatoria de una población
+infinita, con media µ y varianza σ
+2 < ∞, entonces:
+</p>
+            <p>Demostracion: </p>
+            <img src="Formula 5.PNG" alt=""/>
+            <h3>Desigualdad de chebyshev</h3>
+            <p>Sea X una variablea aleatoria, con media E(X) = µ y varianza
+V(X) = σ*σ , entonces:</p>
+            <img src="formula6.PNG" alt=""/>
+    
+        </section>
+        <section id="proporcion">
+                 <h2>Proporcion muestral</h2>
+            <p>es la forma decimal de un porcentaje, por lo que 100% sería una proporción de 1.000; 50% sería una proporción de 0.500, etc. La proporción de la población que vota por el Sr. Jones está simbolizada por el símbolo p . La proporción tiene la siguiente fórmula:</p>
+            <p>p = (número de resultados favorables) / (número de resultados en la población)</p>
+            <p>En esta segunda fórmula, el símbolo de la izquierda se llama p-hat y se usa para referirse a la proporción de una muestra de la población en contraposición a la proporción de la población total. Si bien las fórmulas se ven muy similares, la diferencia es muy importante. En muchas situaciones, realizar encuestas o muestrear a toda la población es difícil, demasiado caro o imposible.</p>
+   
+        </section>
+        <section id="diferencia">
+        <h2>Diferencia de proporciones y cociente de varianza</h2>
+            <h3>Distribucion muestral de la diferencia de proporciones</h3>
+            <p>Dos poblaciones cuyos individuos pueden presentar (éxito) o no (fracaso)
+una característica determinada</p>    
+            <p>Dos muestras de tamaño n1 y n2</p>
+            <p>Proporciones muestrales pˆi</p>
+            <p>Ademas, por el teorema del limite central, si </p>
+            <p>n1>30, n2>30, n1.p1>5, n1,q1>5 n2.p2>5, n2.q2>5 </p>
+            <img src="formula7.PNG" alt=""/>
+            <p>¿Como se comporta la suma (o resta) de v.a. normales?</p>
+            <img src="formula8.PNG" alt=""/>    
+            <h3>Varianza</h3>
+            <h4>Distribución muestral para el cociente de varianzas de poblaciones normales</h4>
+            <p>Dadas dos muestras de tamaños n1 y n2, sabemos que</p>
+            <img src="formula9.PNG" alt=""/>
+            <img src="formula10.PNG" alt=""/>
+            <p>La distribución de probabilidad del miembro derecho se llama F de
+Fisher-Snedecor con n1 − 1 y n2 − 1 grados de libertad: Fn1−1,n2−1</p>
+           
+        </section>
+        <section id="UsoR">
+                    <h2>Uso del R</h2>
+        <p>Un lenguaje para el análisis estadístico y gráfico
+R es un ambiente de programación formado por un conjunto de herramientas muy flexibles que pueden ampliarse fácilmente mediante paquetes, librerías o definiendo nuestras propias funciones. Además es gratuito y de código abierto, un Open Source parte del proyecto GNU, como Linux o Mozilla Firefox. 
+¡Esta es una de sus principales ventajas!
+Cualquier usuario puede descargar y crear su código de manera gratuita, sin restricciones de uso, la única regla es que la distribución siempre sea libre (GPL).
+Gracias a que puede accederse libremente a su código, R software no tiene limitadas sus funciones, al contrario de lo que sucede con otras herramientas estadísticas comerciales  como Statistica, SPSS, etc.</p>
+        <h3>Lo que se puede hacer con R</h3>
+        <p>Puedes: estudiar correlaciones, ajustar modelos, crear gráficos 3D de altísima calidad, aplicar árboles de decisión, realizar análisis clúster, análisis de componentes principales, crear redes neuronales de predicción, etc.
+
+La lista de posibilidades es muy pero que muy extensa y se adapta a todo tipo de necesidades para el análisis complejo de datos.</p>
+        <img src="images.png" alt=""/>
+            <h3>Instalacion de R</h3>
+            <section id="Descarga">
+            <h2><a href="https://www.rstudio.com/products/rstudio/download/"> >>>Descargar R studio IDE<<< </a></h2>           
+            </section>
+        <p>La descarga e instalación de R es sencilla, a continuación se indican los pasos esenciales para una adecuada
+instalación de R en Windows (para otros sistemas operativos es similar)</p>
+        <img src="instal.PNG" alt=""/>
+        
+        </section>
+
+    </body>
+    </html>
